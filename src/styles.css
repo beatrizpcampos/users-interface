@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 60px;
+  padding-top: 78px;
+  justify-content: space-between;
+  background-color: #dddddd;
+  background-size: contain;
+}
+
+.login-container, .register-container {
+  background: white;
+  padding: 15px;
+  height: 74vh;
+  margin-right: 40px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.background-img {
+  height: 80vh;
+}
+
+.logo-img {
+  height: 7vh;
+  margin-top: 70px;
+  border-radius: 900px;
+}
+
+.link {
+  color: #0176f4;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.title {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+.divider {
+  margin-top: -40px;
+}
+
+input {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+button {
+  background-color: #0176f4;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  width: 95%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0176f4;
+}
