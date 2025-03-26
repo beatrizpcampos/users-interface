@@ -12,7 +12,6 @@ function User() {
         <Link to="https://openfinance.bankly.com.br/contato" className="link-header">Entre em contato</Link>
     </header>
     <div className="user-container">
-      <h2></h2>
     </div>
     </>
   );

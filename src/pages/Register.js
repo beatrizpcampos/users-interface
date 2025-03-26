@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import { useAuthService } from '../services/authService'
 import iconImg from '../assets/icon-img.webp'
 import logoImg from '../assets/bankly-logo.jpeg'
@@ -7,6 +7,7 @@ import "../styles.css";
 
 function Register() {
   const { signup } = useAuthService();
+  const navigate = useNavigate()
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -23,6 +24,12 @@ function Register() {
     signup(signupData.name, signupData.email, signupData.password);
 
     alert("Registro feito com sucesso");
+    return(
+      setName(''),
+      setEmail(''),
+      setPassword(''),
+      navigate("/")
+    )
   };
 
   return (
@@ -52,6 +59,7 @@ function Register() {
 
           <p>Ja tem uma conta ? <Link to="/" className="link">Acessar</Link></p>
 
+          <Link to="https://openfinance.bankly.com.br/contato" className="link-contato">Entre em contato</Link>
         </div>
       </div>
     </>
