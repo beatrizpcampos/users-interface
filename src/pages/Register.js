@@ -51,9 +51,25 @@ function Register() {
         <div className="register-container">
           <h1 className="title">Crie uma conta</h1>
 
-          <input placeholder="Nome" value={name} onChange={(e) => setName(e.target.value)} required />
-          <input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-          <input placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <input 
+            placeholder="Nome" 
+            value={name} 
+            onChange={(e) => setName(e.target.value)} 
+            required 
+          />
+          <input 
+            placeholder="Email" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            required 
+          />
+          <input 
+            placeholder="Senha" 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)} 
+            required 
+            type="password"
+          />
 
           <button onClick={handleSubmit}>Criar conta</button>
 
