@@ -26,6 +26,8 @@ function Login() {
   function enterCont() {
     if (sessionStorage.getItem('auth-token')) {
       navigate("/user")
+    }else{
+      return
     }
   }
 
